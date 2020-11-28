@@ -4,7 +4,7 @@ import axios from 'axios'
 export default function CardsList() {
 
 
-	const [ cardsData, setCards ] = useState({
+	const [ cardsData ] = useState({
 	"fetch_lands": [
 		{"name": "Flooded Strand", "set": "ktk", "multiverse_id": 386537},
 		{"name": "Polluted Delta", "set": "ktk", "multiverse_id": 386627},
@@ -29,7 +29,7 @@ const [ fetchedCardsData, setFetchedCards ] = useState({name: "loading..."})
 			setFetchedCards(result.data)
 		}
 		fetchCards()
-		console.log(fetchedCardsData)
+		// console.log(fetchedCardsData)
 	}, [])
 
 	const cardsList = cardsData.fetch_lands.map(card => <li key={card.multiverse_id}>{card.name}</li>)

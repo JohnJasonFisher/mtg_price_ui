@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from 'react'
-import axios from 'axios'
+import React, { useState } from 'react'
 
 export default function UsersList() {
 
-	const [ usersData, setUsers ] = useState(['john', 'paul', 'max'])
+	const [ usersData ] = useState(['john', 'paul', 'max'])
 
 	// useEffect(() => {
 	// 	const fetchUsers = async () => {
