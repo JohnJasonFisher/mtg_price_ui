@@ -1,6 +1,7 @@
 import React from 'react'
 import UsersList from '../users-list/UsersList'
 import CardsList from '../cards-list/CardsList'
+import packageJson from '../../../package.json';
 
 export default function App() {
   return (
@@ -10,7 +11,7 @@ export default function App() {
       </header>
       <UsersList></UsersList>
       <CardsList></CardsList>
-      <footer>version 0.1.1</footer>
+      <footer>version {packageJson.version}</footer>
     </div>
   )
 }
