@@ -10,6 +10,7 @@ export default function App() {
       </header>
       <UsersList></UsersList>
       <CardsList></CardsList>
+      <footer>version 0.1.1</footer>
     </div>
   )
 }
